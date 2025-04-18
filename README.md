@@ -1,3 +1,5 @@
+🌐 Available languages: 🇺🇸 [English](README.en.md) | 🇪🇸 [Español](README.md)
+
 # 🎧 Empy Discord Music Bot (Python)
 
 Un bot de música simple y adorable para Discord usando `discord.py` y `yt-dlp`.  
