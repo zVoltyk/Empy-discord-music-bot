@@ -1,80 +1,81 @@
 # 🎧 Empy Discord Music Bot (Python)
 
-A simple and cute Discord music bot using `discord.py` and `yt-dlp` libraries. Supports queues, playlists, pause/resume, and more!  
-Each bot message comes with a unique kaomoji to keep things fun~ (＾▽＾)
+Un bot de música simple y adorable para Discord usando `discord.py` y `yt-dlp`.  
+¡Soporta colas, playlists, pausar/reanudar y más!  
+Cada mensaje del bot incluye un kaomoji único para hacerlo más divertido~ (＾▽＾)
 
 ---
 
-# 📦 Features
+# 📦 Funciones
 
-- ✅ Join and leave voice channels
-- 🎵 Play songs and YouTube playlists
-- ⏯️ Pause / resume
-- ⏩ Skip current song
-- 🗑️ Clear or remove from queue
-- 📜 Show current queue
-- 💌 Cute kaomojis with every response!
+- ✅ Unirse y salir de canales de voz
+- 🎵 Reproducir canciones y playlists de YouTube
+- ⏯️ Pausar / reanudar
+- ⏩ Saltar canción actual
+- 🗑️ Limpiar o eliminar de la cola
+- 📜 Mostrar la cola actual
+- 💌 Kaomojis lindos en cada respuesta
 
 ---
 
-# 🔧 Requirements
+# 🔧 Requisitos
 
-- Python 3.9 or higher
+- Python 3.9 o superior
 - [FFmpeg](https://ffmpeg.org/download.html)
-- A Discord Bot Token
+- Un token de bot de Discord
 
 ---
 
-# 🚀 Installation
+# 🚀 Instalación
 
-1. **Clone this repository**
+1. **Clona este repositorio**
 ```bash
-git clone https://github.com/your-username/your-private-repo.git
-cd your-private-repo
+git clone https://github.com/tu-usuario/tu-repo-privado.git
+cd tu-repo-privado
 ```
 
-2. **Create and activate a virtual environment (optional but recommended)**
+2. **Crea y activa un entorno virtual (opcional, pero recomendado)**
 ```bash
 python -m venv venv
-venv\Scripts\activate    # On Windows
-# or
-source venv/bin/activate # On macOS/Linux
+venv\Scripts\activate    # En Windows
+# o
+source venv/bin/activate # En macOS/Linux
 ```
 
-3. **Install dependencies**
+3. **Instala las dependencias**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Create a .env file in the root folder and add your bot token:**
+4. **Crea un archivo .env en la raíz del proyecto y añade tu token de bot:**
 ```ini
-DISCORD_TOKEN='YOUR_BOT_TOKEN_HERE'
+DISCORD_TOKEN='TU_TOKEN_DEL_BOT'
 ```
 
-# 🎥 FFmpeg Setup
+# 🎥 Configuración de FFmpeg
 
-This project uses FFmpeg for audio playback.
+Este proyecto usa FFmpeg para reproducir audio.
 
-## Option 1: Use Portable FFmpeg (Recommended for Local Use)
+## Opción 1: Usar FFmpeg portable (recomendado para uso local)
 
-1. Download the latest Windows build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).
-2. Extract the folder (e.g., ffmpeg-master-latest-win64-gpl-shared/) into the project root.
-3. The bot is already configured to use the ffmpeg.exe inside that folder.
+1. Descarga la última versión para Windows desde [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).
+2. Extrae la carpeta (por ejemplo, ffmpeg-master-latest-win64-gpl-shared/) dentro del proyecto.
+3. El bot ya está configurado para usar el ffmpeg.exe dentro de esa carpeta.
 
 ```vbnet
 ffmpeg-master-latest-win64-gpl-shared/
 ```
 
-## Option 2: Add FFmpeg to your system's PATH
+## Opción 2: Agrega FFmpeg al PATH del sistema
 
-You can add the bin/ folder inside FFmpeg to your PATH environment variable so ffmpeg can be accessed globally.
+Agrega la carpeta bin/ dentro de FFmpeg a las variables de entorno (PATH) de tu sistema para que ffmpeg sea accesible globalmente.
 
-# 🐣 Running the bot
+# 🐣 Ejecutar el bot
 ```bash
 python bot.py
 ```
 
-# ✨ Example Commands
+# ✨ Comandos de ejemplo
 ```diff
 !join
 !play <url>
@@ -87,8 +88,8 @@ python bot.py
 !leave
 ```
 
-# 💖 Credits
-Made with love using:
+# 💖 Créditos
+Hecho con amor usando:
 
 - discord.py
 
@@ -96,12 +97,12 @@ Made with love using:
 
 - FFmpeg
 
-# 📬 Colaborations
+# 📬 Colaboraciones
 
-This project is public for everyone to enjoy and learn~ 🎶
+Este proyecto es público para todos para disfrutar y aprender~ 🎶
 
-I don't accept direct contributions without prior discussion.
+No acepto contribuciones directas sin consultarlo previamente.
 
-If you'd like to suggest any changes or work together, please don't hesitate to contact me (｡•̀ᴗ-)✧
+Si quieres sugerir algún cambio o trabajar juntos, no dudes en contactarme (｡•̀ᴗ-)✧
 
-## Let the music begin~ ♪ヽ(･ˇ∀ˇ･ゞ)
+## Que comience la música~ ♪ヽ(･ˇ∀ˇ･ゞ)
