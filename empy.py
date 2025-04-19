@@ -1,4 +1,5 @@
 import os
+import subprocess
 from dotenv import load_dotenv
 import discord as ds
 from discord.ext import commands
@@ -11,6 +12,20 @@ intents.members = True
 empy = commands.Bot(command_prefix='!', intents=intents)
 
 song_queue = {}
+ffmpeg_global_path = "ffmpeg"
+ffmpeg_local_path = os.path.join(os.getcwd(), "ffmpeg-master-latest-win64-gpl-shared", "bin", "ffmpeg.exe")
+
+#ffmpeg path check
+def check_ffmpeg_path():
+    try:
+        #check if ffmpeg is in the system PATH
+        subprocess.check_output(["where", ffmpeg_global_path], stderr=subprocess.DEVNULL)
+        return True
+    except subprocess.CalledProcessError:
+        #if it isn't, check if ffmpeg is in the local path
+        if os.path.isfile(ffmpeg_local_path):
+            return True
+        return False
 
 #yt-dlp config
 def get_audio_info(url):
@@ -60,9 +75,12 @@ async def play_next(ctx):
     if song_queue.get(guild_id) and song_queue[guild_id]:
         next_song = song_queue[guild_id].pop(0)
 
+        if not check_ffmpeg_path():
+            print("Error: No se pudo encontrar FFmpeg. Por favor asegúrate de que FFmpeg esté instalado en el PATH global o en el directorio raíz del programa.")
+
         source = ds.FFmpegPCMAudio(
             next_song['url'],
-            executable="ffmpeg",
+            executable="ffmpeg", # if you don't have ffmpeg in your PATH, use the full path to the executable like "C:/Users/user/Desktop/bot-folder/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg.exe"
             before_options="-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5",
             options="-vn"
         )
