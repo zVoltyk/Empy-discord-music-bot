@@ -2,7 +2,7 @@
 
 # 🎧 Empy Discord Music Bot (Python)
 
-A simple and cute Discord music bot using `discord.py` and `yt-dlp` libraries. Supports queues, playlists, pause/resume, and more!  
+A simple and cute Discord music bot using `discord.py` and `yt-dlp` libraries. Supports queues, playlists (WIP), pause/resume, and more!  
 Each bot message comes with a unique kaomoji to keep things fun~ (＾▽＾)
 
 ---
@@ -10,7 +10,7 @@ Each bot message comes with a unique kaomoji to keep things fun~ (＾▽＾)
 # 📦 Features
 
 - ✅ Join and leave voice channels
-- 🎵 Play songs and YouTube playlists
+- 🎵 Play songs and YouTube playlists (WIP)
 - ⏯️ Pause / resume
 - ⏩ Skip current song
 - 🗑️ Clear or remove from queue

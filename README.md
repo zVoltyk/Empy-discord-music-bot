@@ -3,7 +3,7 @@
 # 🎧 Empy Discord Music Bot (Python)
 
 Un bot de música simple y adorable para Discord usando `discord.py` y `yt-dlp`.  
-¡Soporta colas, playlists, pausar/reanudar y más!  
+¡Soporta colas, playlists (WIP), pausar/reanudar y más!  
 Cada mensaje del bot incluye un kaomoji único para hacerlo más divertido~ (＾▽＾)
 
 ---
@@ -11,7 +11,7 @@ Cada mensaje del bot incluye un kaomoji único para hacerlo más divertido~ (＾
 # 📦 Funciones
 
 - ✅ Unirse y salir de canales de voz
-- 🎵 Reproducir canciones y playlists de YouTube
+- 🎵 Reproducir canciones y playlists (WIP) de YouTube
 - ⏯️ Pausar / reanudar
 - ⏩ Saltar canción actual
 - 🗑️ Limpiar o eliminar de la cola
