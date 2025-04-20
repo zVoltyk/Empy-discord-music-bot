@@ -97,7 +97,7 @@ async def play_next(ctx):
                 print(f"Error post-reproduccion: {e}")
         
         voice_client.play(source, after=after_playing)
-        await ctx.send(f'🎶 Preparada para cantar \(＾▽＾)/:\n* **{next_song["title"]}**')
+        await ctx.send(f'🎶 Preparada para cantar (＾▽＾)/:\n* **{next_song["title"]}**')
 
 #play song
 @empy.command()
