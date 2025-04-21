@@ -1,4 +1,5 @@
 .env
+respaldo/
 ffmpeg-master-latest-win64-gpl-shared/
 __pycache__/
 *.pyc
