@@ -79,15 +79,15 @@ python bot.py
 
 # ✨ Example Commands
 ```diff
-!join
-!play <url>
-!pause
-!resume
-!skip
-!queue
-!remove <index>
-!clearqueue
-!leave
+/join
+/play <url>
+/pause
+/resume
+/skip
+/queue
+/remove <index>
+/clearqueue
+/leave
 ```
 
 # 💖 Credits
