@@ -2,7 +2,7 @@
 
 # 🎧 Empy Discord Music Bot (Python)
 
-Un bot de música simple y adorable para Discord usando `discord.py` y `yt-dlp`.  
+Un bot de música simple y adorable que se ejecuta de manera local para Discord usando `discord.py` y `yt-dlp`.  
 ¡Soporta colas, playlists (WIP), pausar/reanudar y más!  
 Cada mensaje del bot incluye un kaomoji único para hacerlo más divertido~ (＾▽＾)
 
@@ -36,7 +36,7 @@ git clone https://github.com/tu-usuario/tu-repo-privado.git
 cd tu-repo-privado
 ```
 
-2. **Crea y activa un entorno virtual (opcional, pero recomendado)**
+2. **Crea y activa un entorno virtual (opcional)**
 ```bash
 python -m venv venv
 venv\Scripts\activate    # En Windows
@@ -49,9 +49,10 @@ source venv/bin/activate # En macOS/Linux
 pip install -r requirements.txt
 ```
 
-4. **Crea un archivo .env en la raíz del proyecto y añade tu token de bot:**
+4. **Crea un archivo .env en la raíz del proyecto y añade tu token de bot y tu guild ID (Application ID):**
 ```ini
 DISCORD_TOKEN='TU_TOKEN_DEL_BOT'
+GUILD_ID='TU_GUILD_ID'
 ```
 
 # 🎥 Configuración de FFmpeg
@@ -79,15 +80,15 @@ python bot.py
 
 # ✨ Comandos de ejemplo
 ```diff
-!join
-!play <url>
-!pause
-!resume
-!skip
-!queue
-!remove <index>
-!clearqueue
-!leave
+/join
+/play <url>
+/pause
+/resume
+/skip
+/queue
+/remove <index>
+/clearqueue
+/leave
 ```
 
 # 💖 Créditos

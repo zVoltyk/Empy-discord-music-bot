@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 *.log
 *.exe
+keep_alive.py
+procfile
